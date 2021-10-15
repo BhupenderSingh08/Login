@@ -1,0 +1,30 @@
+
+<div class="container">
+   
+    <div class="row">
+        <div class="col-md-6 mt-5 bg">
+            
+        </div>
+       
+        <div class="col-md-6" style="margin-top: 15%;">
+            <form >
+                <form [formGroup]='signinForm'>
+                   
+                  
+                    <label class="sr-only " for="inlineFormInputGroupUsername2">Enter Mobile No.</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">+91</div>
+                      </div>
+                      <input type="text" formControlName="phone" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Enter Mobile No.">
+                    </div>
+                  
+                   
+                    <button type="submit" (click)="postDataValues()" class="btn btn-primary mb-2">Sign in</button>
+                  </form>
+                <!-- <img [src]="formImg"> -->
+            </form>
+        </div>
+        
+    </div>
+</div>

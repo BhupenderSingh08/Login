@@ -1,0 +1,29 @@
+
+<div class="container">
+   
+    <div class="row">
+        <div class="col-md-6 mt-5">
+            <img [src]="imgUrl" >
+        
+        </div>
+       
+        <div class="col-md-6" style="margin-top: 15%;">
+            <form >
+                <form [formGroup]='otpForm'>
+                   
+                  
+                    <label class="sr-only " for="inlineFormInputGroupUsername2">Enter OTP</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                     
+                      <input type="text" formControlName="otp" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Enter OTP">
+                    </div>
+                  
+                   
+                    <button type="submit" (click)="postOtpValues()" class="btn btn-primary mb-2">Verify</button>
+                  </form>
+                <!-- <img [src]="formImg"> -->
+            </form>
+        </div>
+        
+    </div>
+</div>
